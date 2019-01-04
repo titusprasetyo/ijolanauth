@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "id.ijolan.auth",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "uaa",
+    "baseName": "ijolanauth",
+    "packageName": "id.ijolan.auth",
+    "packageFolder": "id/ijolan/auth",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NzM0MTVmNzg2MjczYWNhYjczNTNlYzI1NjQ5MmViODdlNzZhNTZlZGEwYmE3OTA1MTdmZDI0ZTdmMjFkNjJmY2EyZjgwMzIwN2IzZWYwYmIxYTlhMThjZjA5Zjc2NmM4YzBjYmFhY2U4NDhjM2E1MTJlY2VjODU5ZmFkZTMxOWM=",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "id"
+    ],
+    "skipClient": true
+  }
+}
