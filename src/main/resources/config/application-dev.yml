@@ -43,18 +43,18 @@ spring:
             indent-output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/ijolanauth
+        url: jdbc:postgresql://localhost:5432/ijolanauth?currentSchema=app
         username: ijolanauth
-        password:
+        password: ijolanauth
         hikari:
-            auto-commit: false
+            auto-commit: true
     jpa:
         database-platform: io.github.jhipster.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
         show-sql: true
         properties:
             hibernate.id.new_generator_mappings: true
-            hibernate.connection.provider_disables_autocommit: true
+            hibernate.connection.provider_disables_autocommit: false
             hibernate.cache.use_second_level_cache: true
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: true
@@ -62,6 +62,9 @@ spring:
             hibernate.cache.hazelcast.instance_name: ijolanauth
             hibernate.cache.use_minimal_puts: true
             hibernate.cache.hazelcast.use_lite_member: true
+            hibernate.show_sql: true
+            hibernate.use_sql_comments: false
+            hibernate.format_sql: true             
     liquibase:
         contexts: dev
     mail:

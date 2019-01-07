@@ -135,6 +135,22 @@
                                  constraintName="fk_evt_pers_audit_evt_data"
                                  referencedColumnNames="event_id"
                                  referencedTableName="jhi_persistent_audit_event"/>
+                                 
+		<createTable tableName="oauth_client_details">
+            <column name="client_id" type="varchar(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="resource_ids" type="varchar(255)"/>
+            <column name="client_secret" type="varchar(256)"/>
+            <column name="scope" type="varchar(256)"/>
+            <column name="authorized_grant_types" type="varchar(256)"/>
+            <column name="web_server_redirect_uri" type="varchar(256)"/>
+            <column name="authorities" type="varchar(256)"/>
+            <column name="access_token_validity" type="varchar(256)"/>
+            <column name="refresh_token_validity" type="varchar(256)"/>
+            <column name="additional_information" type="varchar(4000)"/>
+            <column name="autoapprove" type="varchar(256)"/>
+        </createTable>                                 
     </changeSet>
 
     <changeSet author="jhipster" id="00000000000002" context="test">
